@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIYOSHOP - صندوق الغداء الفاخر</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D4037', // بني غامق فخم
+                        secondary: '#D7CCC8', // بيج ترابي
+                        accent: '#E65100', // برتقالي للطوارئ (زر الطلب)
+                        light: '#F5F5F5',
+                        gold: '#C5A059'
+                    },
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #5D4037, #C5A059);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        /* تأثيرات بسيطة للصور */
+        .product-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 smooth-scroll font-sans text-gray-800">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-extrabold text-primary tracking-tighter">RIYO<span class="text-gold">SHOP</span></span>
+                </div>
+                <a href="#order-form" class="bg-primary text-white px-6 py-2 rounded-full font-bold text-sm hover:bg-opacity-90 transition">
+                    أطلب الآن
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative bg-secondary/20 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 bg-transparent sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 flex flex-col justify-center h-full">
+                <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                    <div class="sm:text-center lg:text-right">
+                        <span class="inline-block py-1 px-3 rounded-full bg-gold/10 text-primary text-sm font-bold mb-4 border border-gold/20">
+                            ✨ الأكثر مبيعاً لموسم 2026
+                        </span>
+                        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                            <span class="block xl:inline">تمتع بوجباتك</span>
+                            <span class="block text-primary">ساخنة وطازجة أينما كنت</span>
+                        </h1>
+                        <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                            صندوق الغداء الفاخر من الفولاذ المقاوم للصدأ 316. تقنية عزل متطورة تحفظ الحرارة لساعات. رفيقك المثالي للعمل، الدراسة، وشهر رمضان المبارك.
+                        </p>
+                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                            <div class="rounded-md shadow">
+                                <a href="#order-form" class="w-full flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-lg text-white bg-accent hover:bg-orange-700 md:py-4 md:text-lg transition shadow-lg transform hover:scale-105">
+                                    أطلب نسختك الآن
+                                    <i class="fas fa-shopping-cart mr-2"></i>
+                                </a>
+                            </div>
+                            <div class="mt-3 sm:mt-0 sm:mr-3">
+                                <a href="#features" class="w-full flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-lg text-primary bg-primary/10 hover:bg-primary/20 md:py-4 md:text-lg transition">
+                                    اكتشف المميزات
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
+            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full transform hover:scale-105 transition duration-700" src="https://raw.githubusercontent.com/ukeeboywith-cmd/zzzzzzz/refs/heads/main/LunchB4T-1_sxef-r6_l5wl-dw.jpg" alt="صندوق الغداء الفاخر">
+        </div>
+    </section>
+
+    <section class="py-10 bg-primary">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <i class="fas fa-moon text-gold text-4xl mb-4 animate-pulse"></i>
+            <h2 class="text-3xl font-bold mb-4 text-gold">استعد لشهر رمضان المبارك</h2>
+            <p class="text-lg text-gray-200">
+                الحل المثالي لنقل فطورك ساخناً إلى العمل، أو الحفاظ على سحورك طازجاً ومنعشاً. طبقات متعددة تسمح لك بفصل الشوربة عن الطبق الرئيسي والسلطة دون اختلاط النكهات.
+            </p>
+        </div>
+    </section>
+
+    <section id="features" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-base text-accent font-semibold tracking-wide uppercase">جودة لا تضاهى</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    لماذا يختار الجميع هذا الصندوق؟
+                </p>
+            </div>
+
+            <div class="mt-14 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 text-primary mb-4">
+                        <i class="fas fa-temperature-high text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">عزل حراري 6 ساعات</h3>
+                    <p class="mt-2 text-gray-500">تقنية لحام بدون خياطة وطبقة رغوية محسنة للحفاظ على حرارة أو برودة طعامك لفترات طويلة.</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 text-primary mb-4">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">فولاذ صحي وآمن</h3>
+                    <p class="mt-2 text-gray-500">مصنوع من الفولاذ المقاوم للصدأ 316 المخصص للطعام، آمن وصحي للاستخدام اليومي ولا يغير الطعم.</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 text-primary mb-4">
+                        <i class="fas fa-tint-slash text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">مانع للتسرب 100%</h3>
+                    <p class="mt-2 text-gray-500">حلقات سيليكون مدمجة في كل طبقة لضمان إغلاق محكم، احمل الشوربة والمرق وأنت مرتاح البال.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-secondary/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="order-2 md:order-1 space-y-6">
+                    <h3 class="text-3xl font-bold text-primary">تصميم ذكي متعدد الطبقات</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 ml-3"></i>
+                            <span class="text-gray-700">طبقات منفصلة لمنع اختلاط النكهات (سلطة، طبق رئيسي، فواكه).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 ml-3"></i>
+                            <span class="text-gray-700">قابل للتسخين في الميكروويف (بإزالة الأوعية المعدنية).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 ml-3"></i>
+                            <span class="text-gray-700">يأتي مع حقيبة عازلة أنيقة وسهلة الحمل.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-1 md:order-2 grid grid-cols-2 gap-4">
+                    <img src="https://raw.githubusercontent.com/ukeeboywith-cmd/zzzzzzz/refs/heads/main/LunchB4T-3_iend-a4_4rl8-ek.jpg" class="rounded-xl shadow-lg w-full h-48 object-cover transform hover:scale-105 transition" alt="طبقات العزل">
+                    <img src="https://raw.githubusercontent.com/ukeeboywith-cmd/zzzzzzz/refs/heads/main/LunchB4T-1_sxef-r6_l5wl-dw.jpg" class="rounded-xl shadow-lg w-full h-48 object-cover transform hover:scale-105 transition" alt="مانع التسرب">
+                    <img src="https://raw.githubusercontent.com/ukeeboywith-cmd/zzzzzzz/refs/heads/main/LunchB4T-7_jb6d-1y_zzuy-lm.jpg" class="col-span-2 rounded-xl shadow-lg w-full h-64 object-cover transform hover:scale-105 transition" alt="صندوق مفتوح">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order-form" class="py-16 bg-white relative">
+        <div class="absolute inset-0 h-1/2 bg-secondary/20"></div>
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+                
+                <div class="md:w-1/2 bg-gray-100 relative">
+                    <img src="https://raw.githubusercontent.com/ukeeboywith-cmd/zzzzzzz/refs/heads/main/LunchB4T-cnc_z1di-xz_p5bq-pt.jpg" class="w-full h-full object-cover" alt="حقيبة الغداء كاملة">
+                    <div class="absolute bottom-0 right-0 bg-accent text-white px-4 py-2 rounded-tl-xl font-bold text-lg">
+                        تخفيض محدود 🔥
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 p-8 lg:p-12">
+                    <div class="text-center mb-8">
+                        <h2 class="text-2xl font-bold text-gray-900">أطلب الآن والدفع عند الاستلام</h2>
+                        <div class="mt-2 flex items-center justify-center space-x-2 space-x-reverse">
+                            <span class="text-3xl font-extrabold text-primary">4200 دج</span>
+                            <span class="text-lg text-gray-400 line-through decoration-red-500">6500 دج</span>
+                        </div>
+                        <p class="text-green-600 text-sm font-semibold mt-1">وفر 2300 دج اليوم + توصيل سريع</p>
+                    </div>
+
+                    <form action="https://formspree.io/f/mreakqbk" method="POST" class="space-y-4">
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">الاسم واللقب</label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <input type="text" name="name" required class="w-full pr-10 pl-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition outline-none" placeholder="اكتب اسمك هنا">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">رقم الهاتف</label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400">
+                                    <i class="fas fa-phone"></i>
+                                </span>
+                                <input type="tel" name="phone" required class="w-full pr-10 pl-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition outline-none text-left" placeholder="0XXXXXXXXX">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">الولاية</label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </span>
+                                <select id="wilaya-select" name="wilaya" required class="w-full pr-10 pl-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition outline-none bg-white">
+                                    <option value="" disabled selected>اختر الولاية</option>
+                                    </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">البلدية / العنوان</label>
+                            <input type="text" name="address" required class="w-full px-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition outline-none" placeholder="اكتب اسم بلديتك أو عنوانك">
+                        </div>
+
+                        <button type="submit" class="w-full bg-accent hover:bg-orange-700 text-white font-bold py-4 rounded-xl shadow-lg transform hover:scale-[1.02] transition duration-200 flex justify-center items-center group">
+                            <span>أكد طلبي الآن</span>
+                            <i class="fas fa-arrow-left mr-2 group-hover:-translate-x-1 transition"></i>
+                        </button>
+                        
+                        <p class="text-xs text-center text-gray-500 mt-4">
+                            <i class="fas fa-lock ml-1"></i> معلوماتك آمنة 100%. سيتم الاتصال بك لتأكيد الطلب خلال 24 ساعة.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-white py-8 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <span class="text-2xl font-extrabold tracking-tighter">RIYO<span class="text-gold">SHOP</span></span>
+                <p class="text-sm text-gray-300 mt-1">الجودة والأناقة في مكان واحد.</p>
+            </div>
+            <div class="flex space-x-6 space-x-reverse text-sm text-gray-300">
+                <a href="#" class="hover:text-gold transition">سياسة الخصوصية</a>
+                <a href="#" class="hover:text-gold transition">شروط الاستخدام</a>
+                <a href="#" class="hover:text-gold transition">اتصل بنا</a>
+            </div>
+            <div class="mt-4 md:mt-0 text-sm text-gray-400">
+                &copy; 2026 RIYOSHOP. جميع الحقوق محفوظة.
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-3 md:hidden z-50 flex justify-between items-center shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
+        <div class="flex flex-col">
+            <span class="text-xs text-gray-500">السعر الحالي</span>
+            <span class="text-lg font-bold text-primary">4200 دج</span>
+        </div>
+        <a href="#order-form" class="bg-accent text-white px-8 py-3 rounded-lg font-bold text-sm shadow-md animate-bounce">
+            اطلب الآن
+        </a>
+    </div>
+
+    <script>
+        // قائمة الولايات الجزائرية
+        const wilayas = [
+            "01 - أدرار", "02 - الشلف", "03 - الأغواط", "04 - أم البواقي", "05 - باتنة", "06 - بجاية", "07 - بسكرة", "08 - بشار", "09 - البليدة", "10 - البويرة",
+            "11 - تمنراست", "12 - تبسة", "13 - تلمسان", "14 - تيارت", "15 - تيزي وزو", "16 - الجزائر", "17 - الجلفة", "18 - جيجل", "19 - سطيف", "20 - سعيدة",
+            "21 - سكيكدة", "22 - سيدي بلعباس", "23 - عنابة", "24 - قالمة", "25 - قسنطينة", "26 - المدية", "27 - مستغانم", "28 - المسيلة", "29 - معسكر", "30 - ورقلة",
+            "31 - وهران", "32 - البيض", "33 - إليزي", "34 - برج بوعريريج", "35 - بومرداس", "36 - الطارف", "37 - تندوف", "38 - تيسمسيلت", "39 - الوادي", "40 - خنشلة",
+            "41 - سوق أهراس", "42 - تيبازة", "43 - ميلة", "44 - عين الدفلى", "45 - النعامة", "46 - عين تموشنت", "47 - غرداية", "48 - غليزان", 
+            "49 - تيميمون", "50 - برج باجي مختار", "51 - أولاد جلال", "52 - بني عباس", "53 - عين صالح", "54 - عين قزام", "55 - تقرت", "56 - جانت", "57 - المغير", "58 - المنيعة"
+        ];
+
+        const select = document.getElementById('wilaya-select');
+        wilayas.forEach(wilaya => {
+            const option = document.createElement('option');
+            option.value = wilaya;
+            option.textContent = wilaya;
+            select.appendChild(option);
+        });
+    </script>
+</body>
+</html>
